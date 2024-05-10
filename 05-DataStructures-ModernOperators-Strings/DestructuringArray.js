@@ -1,7 +1,7 @@
 'use strict';
 // Data needed for first part of the section
 const restaurant = {
-  name: 'Classico Italiano',
+  name: 'Classical Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
