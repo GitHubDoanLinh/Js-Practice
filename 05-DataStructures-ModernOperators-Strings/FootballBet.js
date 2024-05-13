@@ -6,7 +6,7 @@ const game = {
     ['Neuer', 'Pavard', 'Sule', 'Hernandez', 'Davies', 'Kimmich', 'Goretzka', 'Muller', 'Gnabry', 'Lewandowski', 'Coman'],
     ['Oblak', 'Trippier', 'Gimenez', 'Savic', 'Lodi', 'Koke', 'Llorente', 'Herrera', 'Carrasco', 'Felix', 'Suarez']
   ],
-  score: '4:0',
-  scored: ['Muller', 'Gnabry', 'Lewandowski', 'Coman'],
+  score: '3:0',
+  scored: ['Muller', 'Gnabry', 'Lewandowski'],
   date: 'Dec 9th - 2023',
 }
