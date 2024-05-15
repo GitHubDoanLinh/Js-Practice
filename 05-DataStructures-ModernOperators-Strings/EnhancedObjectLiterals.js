@@ -1,6 +1,6 @@
 'use strict';
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
-const openingHours= {
+const openingHours = {
   [weekdays[3]]: {
     open: 12,
     close: 22
@@ -9,7 +9,7 @@ const openingHours= {
     open: 11,
     close: 23
   },
-  [`day-${2+5}`]: {
+  [`day-${2 + 4}`]: {//day-6 != friday
     open: 0,
     close: 24
   }
@@ -28,10 +28,10 @@ const restaurant = {
 
   // ES6 Enhanced Object Literals :^)
   openingHours,
-  order(starterIndex, mainIndex){
+  order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
-  orderDelivery(starterIndex, mainIndex,time,address) {
+  orderDelivery(starterIndex, mainIndex, time, address) {
     console.log(`Order received: ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be to ${address} at time ${time}`);
   }
 };
