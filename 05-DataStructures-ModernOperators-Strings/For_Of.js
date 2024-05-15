@@ -21,15 +21,15 @@ const restaurant = {
   }
 };
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-console.log('-------  for (const item of menu) console.log(item) -------')
+console.log('-------  for (const item of menu) console.log(item) -------');
 for (const item of menu) console.log(item);
-console.log('------- for (const item of menu.entries()) console.log(item);  ------- ')
+console.log('------- for (const item of menu.entries()) console.log(item);  ------- ');
 for (const item of menu.entries()) console.log(item);
-console.log('---  console.log(menu.entries())  ---')
+console.log('---  console.log(menu.entries())  ---');
 console.log(menu.entries());
-console.log('---  console.log([...menu.entries()])  ---')
+console.log('---  console.log([...menu.entries()])  ---');
 console.log([...menu.entries()]);
-console.log('--- console.log(`${item[0] + 1}: ${item[1]}`) ---')
+console.log('--- console.log(`${item[0] + 1}: ${item[1]}`) ---');
 for (const item of menu.entries()) {
   console.log(`${item[0] + 1}: ${item[1]}`);//refactor display
 }
