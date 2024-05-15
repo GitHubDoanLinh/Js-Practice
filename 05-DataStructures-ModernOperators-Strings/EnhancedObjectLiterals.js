@@ -9,7 +9,7 @@ const openingHours= {
     open: 11,
     close: 23
   },
-  [`day-${2+4}`]: {
+  [`day-${2+5}`]: {
     open: 0,
     close: 24
   }
