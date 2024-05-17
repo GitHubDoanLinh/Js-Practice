@@ -3,31 +3,56 @@ const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
   players: [
-    ['Neuer', 'Pavard', 'Sule', 'Hernandez', 'Davies', 'Kimmich', 'Goretzka', 'Muller', 'Gnabry', 'Lewandowski', 'Coman'],
-    ['Oblak', 'Trippier', 'Gimenez', 'Savic', 'Lodi', 'Koke', 'Llorente', 'Herrera', 'Carrasco', 'Felix', 'Suarez']
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandowski'
+    ],
+    [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze'
+    ]
   ],
-  score: '3:0',
-  scored: ['Muller', 'Gnabry', 'Lewandowski'],
-  date: 'Dec 9th - 2023',
+  score: '4:0',
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+  date: 'Nov 9th, 2037',
   odds: {
     team1: 1.33,
     x: 3.25,
     team2: 6.5
   }
 };
-const [player1, player2] = game.players;
-console.log(player1, player2);
-const [gk, ...fieldPlayers] = player1;
-const allPlayers = [...player1, ...player2];
-const players1Final = [...player1, 'Thiago', 'Coutinho', 'Perisic'];
-const {
-  odds: { team1, x: draw, team2 }
-} = game;
-const printGoals = function(...players) {
-  console.log(`${players.length} goals were scored!`);
-  players.forEach(player => console.log(player));
-};
-printGoals('Davies', 'Kimmich', 'Goretzka');
-printGoals(...game.scored);
-team1 < team2 && console.log('Team1 will win 🏆!');
-team1 > team2 && console.log('Team2 will win 🏆!');
+
+//1
+for (let i = 0; i < game.scored.length; i++) {
+  console.log(`Goal ${i + 1} ${game.scored[i]}`);
+}
+//2
+let avg = 0;
+const odds = Object.values(game.odds);
+for(const odd of odds){
+  avg += odd;
+}
+console.log(avg/odds.length)
+//3
+for(const [team, odd] of Object.entries(game.odds)) {
+  const teamStr = team === 'x' ? 'draw' : `Odd of victory ${game[team]}`;
+  console.log(`${teamStr} ${odd}`);
+}
