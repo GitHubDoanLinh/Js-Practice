@@ -49,9 +49,9 @@ for(const [key, value] of question) {
   if(typeof key === 'number') console.log(`Answer ${
     key}: ${value}`);
 }
-// const answer = Number(prompt('Your answer:'));
-// console.log(answer);
-// console.log(question.get(question.get('correct') === answer));
+const answer = Number(prompt('Your answer:'));
+console.log(answer);
+console.log(question.get(question.get('correct') === answer));
 
 //convert map to array
 console.log([...question]);
