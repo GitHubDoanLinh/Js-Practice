@@ -7,6 +7,6 @@ document.querySelector('button').addEventListener('click', function() {
   for (const [i, word] of words.entries()) {
     const [first, second] = word.toLowerCase().trim().split('_');
     const output = `${first}${second.replace(second[0], second[0].toUpperCase())}`;
-    console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
+    console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);//
   }
 });
