@@ -19,7 +19,7 @@ const vietjetAir = {
 };
 
 const book = vietnamAirLine.book;
-// book(25,'John chris') //Does NOT work !!!
+// book(25,'John chris') //Does NOT work!!!
 
 //Call method
 book.call(vietjetAir, 233, 'John chris');
