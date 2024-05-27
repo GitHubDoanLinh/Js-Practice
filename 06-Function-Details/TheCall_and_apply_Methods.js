@@ -13,7 +13,7 @@ vietnamAirLine.book(635, 'Linus Torvalds');
 console.log(vietnamAirLine);
 
 const vietjetAir = {
-  name: 'VietJetAir',
+  airline: 'VietJetAir',
   bnCode: 'VJA',
   bookings: [],
 };
