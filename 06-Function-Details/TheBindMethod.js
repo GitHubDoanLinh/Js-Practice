@@ -59,7 +59,7 @@ const createTaxAdder = rate => value => value + value * rate;
 const addTax2 = createTaxAdder(0.1);
 console.log(addTax2(200));
 
-// create addVAT2 function with rate = 0.15
+// create addVAT2 function with rate = 0.15.
 const addVAT2 = createTaxAdder(0.15);
 console.log(addVAT2(100));
 console.log(addVAT2(80));
