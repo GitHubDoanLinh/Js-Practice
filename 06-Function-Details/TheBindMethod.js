@@ -74,14 +74,3 @@ const addVAT_RF = createTaxAdderRF(0.1);
 console.log(addVAT_RF(300));
 const addVAT_RFF = createTaxAdderRF(0.2);
 console.log(addVAT_RFF(500))
-
-
-
-
-
-
-
-
-
-
-
