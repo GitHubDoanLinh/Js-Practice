@@ -29,9 +29,12 @@ const account4 = {
 const accounts = [account1, account2, account3, account4];
 
 const user = 'Steven Thomas William'; //stw
-const username1 = user.toLowerCase().split(' ').map(function(name) {
-  return name[0];
-}).join('');
+const username1 = user
+  .toLowerCase()
+  .split(' ')
+  .map(function(name) {
+    return name[0];
+  }).join('');
 console.log(username1);
 
 // refactoring
