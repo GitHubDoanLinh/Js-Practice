@@ -34,9 +34,6 @@ const account4 = {
 const accounts = [account1, account2, account3, account4];
 
 console.log(accounts);
-
-const account = accounts.find(acc => acc.owner === 'Sarah Smith')
-console.log(account);
 const findAcc = function() {
   for(const acc of accounts){
     if(acc.owner === 'Jonas Schmedtmann'){
@@ -45,3 +42,6 @@ const findAcc = function() {
   }
 }
 console.log(findAcc());
+
+const account = accounts.find(acc => acc.owner === 'Sarah Smith')
+console.log(account);
