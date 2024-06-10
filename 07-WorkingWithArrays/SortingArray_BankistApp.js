@@ -174,9 +174,15 @@ btnClose.addEventListener('click', function(e) {
 });
 
 let sorted = false;
-btnSort.addEventListener('click', function(e){
+btnSort.addEventListener('click', function(e) {
   e.preventDefault();
-  displayMovements(currentAccount.movements,!sorted);
+  displayMovements(currentAccount.movements, !sorted);
   sorted = !sorted;
   console.log(sorted);
-})
+});
+labelBalance.addEventListener('click', function() {
+  const movementsUI = Array.from(document.querySelectorAll('.movements__value'),
+    elm => Number(elm.textContent.replace('€', '')));
+  console.log(movementsUI);
+  // const movementsUI2 = [...document.querySelectorAll('.movements__value')];//way2
+});
