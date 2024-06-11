@@ -52,7 +52,7 @@ const sums = accounts
   }, { deposits: 0, withdrawals: 0 });
 console.log(sums); // => { deposits: 25180, withdrawals: -7340 }
 
-//difference way
+//difference way with destructuring
 const { dep, withd } = accounts
   .flatMap(acc => acc.movements)
   .reduce((summ, curr) => {
@@ -61,21 +61,20 @@ const { dep, withd } = accounts
   }, { dep: 0, withd: 0 });
 console.log(dep, withd);
 
-const convertTitleCase = function (title) {
-  const capitzalize = str => str[0].toUpperCase() + str.slice(1);
-
-  const exceptions = ['a', 'an', 'and', 'the', 'but', 'or', 'on', 'in', 'with'];
-
+// convert a title : this is a nice title => This Is a Nice Title
+const convertTitleCase = function(title) {
+  const capitalize = str => str[0].toUpperCase() + str.slice(1);
+  const exceptions = ['a', 'an', 'the', 'but', 'or', 'on', 'in', 'and', 'with'];
   const titleCase = title
     .toLowerCase()
     .split(' ')
-    .map(word => (exceptions.includes(word) ? word : capitzalize(word)))
+    .map(word => exceptions.includes(word) ? word : capitalize(word))
     .join(' ');
-
-  return capitzalize(titleCase);
+  return capitalize(titleCase);// áp dụng hàm capitalize lên chuỗi tiêu đề đã được chuyển đổi
 };
-
 console.log(convertTitleCase('this is a nice title'));
+console.log(convertTitleCase('a hi hi do cho'));
 console.log(convertTitleCase('this is a LONG title but not too long'));
 console.log(convertTitleCase('and here is another title with an EXAMPLE'));
+
 
