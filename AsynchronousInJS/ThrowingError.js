@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </article>
     `;
     countriesContainer.insertAdjacentHTML('beforeend', html);
-    // countriesContainer.style.opacity = 1;
+    //countriesContainer.style.opacity = 1;
   };
 
   const renderError = function(msg) {
