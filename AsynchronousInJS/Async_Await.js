@@ -41,4 +41,3 @@ const whereAmI = async function(){
 }
 whereAmI();
 console.log('FIRST');
-
