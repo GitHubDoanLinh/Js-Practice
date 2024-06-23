@@ -34,7 +34,6 @@ const whereAmI = async function(){
   console.log(dataGeo)
   //Country data
   const res = await fetch(`https://restcountries.com/v2/name/${dataGeo.country}`);
-  // if (!res.ok) throw new Error('Problem getting country');
   const data = await res.json();
   renderCountry(data[0]);
 
