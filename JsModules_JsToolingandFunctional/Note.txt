@@ -8,3 +8,4 @@ Note2: Đối tượng được import không phải là bản sao của đối 
         một đối tượng (hoặc giá trị) mà module đó export
         Khi bạn export một đối tượng từ một module và sau đó import nó ở một module khác, cả hai modules đều chia sẻ cùng một tham chiếu đến
         đối tượng đó. Nếu một module thay đổi đối tượng đó, thay đổi sẽ được phản ánh ở cả hai modules.
+Note3: top-level-Await có chặn việc thực thi mã, không chỉ trong module nó đc viết mà còn cả ở module nó đc import !
