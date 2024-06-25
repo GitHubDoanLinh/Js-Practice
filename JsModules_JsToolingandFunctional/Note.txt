@@ -3,3 +3,8 @@ Note1:export default được sử dụng để xuất một giá trị hoặc m
 -Cú pháp import:
               export default: Không cần dùng {} khi import.
               Named export: Cần dùng {} khi import.
+Note2: Đối tượng được import không phải là bản sao của đối tg được export!. Mà là một tham chiếu trực tiếp đến đối tượng đó
+        Điều này có nghĩa là khi bạn import một đối tượng (hoặc bất kỳ giá trị nào) từ một module khác, bạn đang thao tác trực tiếp trên cùng
+        một đối tượng (hoặc giá trị) mà module đó export
+        Khi bạn export một đối tượng từ một module và sau đó import nó ở một module khác, cả hai modules đều chia sẻ cùng một tham chiếu đến
+        đối tượng đó. Nếu một module thay đổi đối tượng đó, thay đổi sẽ được phản ánh ở cả hai modules.
