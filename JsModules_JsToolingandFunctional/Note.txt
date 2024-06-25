@@ -1,2 +1,5 @@
 Note1:export default được sử dụng để xuất một giá trị hoặc một hàm duy nhất từ một module. Một module có thể có nhiều
       export bình thường (named exports), nhưng chỉ có thể có một export mặc định (default export)
+-Cú pháp import:
+              export default: Không cần dùng {} khi import.
+              Named export: Cần dùng {} khi import.
